@@ -1,7 +1,13 @@
  <!DOCTYPE html> <!-- this declares that this document is an html5 document-->
  <html> <!--root element of an html page-->
     <head> <!--contains meta information about the html and can be populated with various infos-->
-        <title>Git Cheat sheet</title>
+        <title>Git Cheat sheet</title> <!--Required in every html document-->
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"><!--Describes metadata within an html document-->
+        <meta name="description" content="Git cheatsheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--This gives instructions on how
+        to contro the page's dimensions and scaling-->
+        <script></script><!--this is used to define a script in this file, but we usually do it with a separate script.js file-->
     </head>
     <body> <!--self explainatory-->
         <h1>Git & Github cheat sheet</h1>
@@ -13,15 +19,28 @@
         </ul>
         <section class="chapter1">
             <h2> Start of the git session</h2>
-            <p>I have to insert some text here</p>
+            <ol>
+                <li>Open Terminal</li>
+                <li>Navigate to the ProjectDirectory: <br><code>cd path/to/ProjectDirectory</code></li>
+                <li>Initialize a Git Repository: <br><code>git init</code></li>
+            </ol>
+            <p>Git is a command-line tool, so the first thing to do is to open the terminal, navigate to the project Directory, and initialize a Git repository</p>
         </section>
         <section class="chapter2">
             <h2> Adding and committing to changes</h2>
+            <ol>
+                <li><code>git add file</code><br>or<br><code>git add .</code></li>
+                <li><code>git commit -m "text message"</code></li>
+            </ol>
             <p>I have to insert some text here</p>
         </section>
         <section class="chapter3">
             <h2> Pushing changes</h2>
-            <p>I have to insert some text here</p>
+            <ol>
+                <li><code>git push origin main</code></li>
+            </ol>
+            <p>This command will push the changed to the remote repository name (often "origin) and the branch name you want to push (main)<br>
+            This command will not end the initialized session, after pushing you can continue to work on the project, make more changes, commit them and push those changes.</p>
         </section>
         <section class="chapter4">
             <h2> Cloning someonelse's repository</h2>
